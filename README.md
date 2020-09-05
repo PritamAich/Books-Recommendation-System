@@ -85,9 +85,9 @@ c) Explored the following factors:
 
 a) Extracted the most relevant columns that are needed to recommend a book to a user.
 
-b) Checked null values and filled those null values because removing those null values would cause some books records to get deleted as well.
+b) Checked null values and filled those null values because removing those null values would cause some book records to get deleted as well.
 
-c) saved the final dataset for recommendation.
+c) Saved the final dataset for recommendation.
 
 
 ### 3. Model building:
@@ -96,6 +96,7 @@ We used the ratings dataset to train our model.
 a) Splitting the dataset into train and test set (80-20 split ratio)
 b) The Neural Network architecture we’re going to create will have two input embedding layers. The first embedding layer accepts the books, and the second the users. These two embeddings are trained separately and then combined together before being passed to a dense layer.
 ![](images/Architecture.png)
+
 c) Stored the number of unique books and unique users in two seperate variables.
 d) Built the embedding layers for both books and users
 
@@ -109,7 +110,7 @@ d) Built the embedding layers for both books and users
     embedding_layer_users = Embedding(user_id + 1,10)(users_input)#Embedding layer
     embedding_output_users = Flatten()(embedding_layer_users)#Embedding layer output
  
-e)Joined the two layers using tf.keras.Concatenate() and added a Dense layer on top of that with 128 neurons and a dropout layer with a dropout rate of 0.5. Then used the tensorflow Model class to create a single model from our defined architecture. This model is expecting two input arrays (books and users).
+e)Joined the two layers using tf.keras.Concatenate() and added a Dense layer on top of that with 128 neurons and a dropout layer with a dropout rate of 0.5, used Rectified linear unit as activation function. Then used the tensorflow Model class to create a single model from our defined architecture. This model is expecting two input arrays (books and users).
         
     #Concatination and Dense layer
 
@@ -143,7 +144,7 @@ g) Finally trained the model on train set and validated on the test set. Then sa
 
 a) Loaded the model and the books and ratings dataset. The recommendations are gonna be made from the books dataset.
 
-b) Defined a function that is gonna take a parameter input 'user_id' which is basically a unique id for each user. The function will return a dataset containg the top 5 recommended books for that particlular user.
+b) Defined a function that is expecting a parameter input 'user_id' which is basically a unique id for each user. The function will return a dataset containg the top 5 recommended books for that particlular user.
     
     #Defining a function that will recommend top 5 books
     def recommend(user_id):
