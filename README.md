@@ -84,7 +84,9 @@ c) Explored the following factors:
 ### 2. Data Preprocessing:
 
 a) Extracted the most relevant columns that are needed to recommend a book to a user.
+
 b) Checked null values and filled those null values because removing those null values would cause some books records to get deleted as well.
+
 c) saved the final dataset for recommendation.
 
 
