@@ -143,7 +143,7 @@ g) Finally trained the model on train set and validated on the test set. Then sa
     Epoch 5/15
     12272/12272 [==============================] - 100s 8ms/step - loss: 0.6856 - val_loss: 0.7055
   The loss curve:
-  [](images/loss.png)
+  ![](images/loss.png)
   
 ### 4. Recommendation:
 
