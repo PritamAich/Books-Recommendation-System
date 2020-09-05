@@ -65,16 +65,16 @@ a) Loading the csv files
 b) Checking the description of the daatsets like the data types, how many rows , columns, etc
 c) Explored the following factors:
   - Top 20 highest rated books
-  [](images/top rated.png)
+  [](images/top_rated.png)
   
   - Top 20 most popular books
-  [](images/most popular.png)
+  [](images/most_popular.png)
   
   - Most popular authors
-  [](images/most popular authors.png)
+  [](images/most_popular_authors.png)
   
   - Most number of ratings
-  [](images/most ratings.png)
+  [](images/most_ratings.png)
   
 ### 2. Data Preprocessing:
 
