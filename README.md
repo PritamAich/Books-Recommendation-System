@@ -88,7 +88,11 @@ c) Explored the following factors:
 
 a) Extracted the most relevant columns that are needed to recommend a book to a user.
 
+The final columns are: 'id', 'book_id', 'isbn', 'authors', 'original_publication_year', 'title', 'average_rating', 'ratings_count', 'small_image_url'
+           
 b) Checked null values and filled those null values because removing those null values would cause some book records to get deleted as well.
+    
+    books_new = books_new.fillna('NA')
 
 c) Saved the final dataset for recommendation.
 
