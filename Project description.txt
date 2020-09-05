@@ -1,7 +1,0 @@
-There are two primary types of recommender systems:
-    
-1. Collaborative Filtering Systems: These types of recommender systems are based on the user’s direct behavior. That is, this system builds a model of the user based on past choices, activities, and preferences. It then uses this knowledge to predict what the user will like based on their similarity to other user profiles.
-    
-2. Content-Based Filtering System: Content-based recommender systems, on the other hand, are based on the items, and not necessarily the users. This method builds an understanding of similarity between items. That is, it recommends items that are similar to each other in terms of properties.
-    
-     There is a third type of recommender system, known as a hybrid approach. As you can guess, this approach combines the collaborative and content-based approaches to build better and more generalized systems. That is, it basically combines the strength of both approaches.
