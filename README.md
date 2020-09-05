@@ -63,8 +63,11 @@ Download the dataset from [here](https://www.kaggle.com/zygmunt/goodbooks-10k)
 ### 1. EDA:  
 
 a) Loading the csv files
+
 b) Checking the description of the daatsets like the data types, how many rows , columns, etc
+
 c) Explored the following factors:
+
   - Top 20 highest rated books
   
 ![](images/top_rated.png)
@@ -94,10 +97,12 @@ c) Saved the final dataset for recommendation.
 We used the ratings dataset to train our model.
 
 a) Splitting the dataset into train and test set (80-20 split ratio)
+
 b) The Neural Network architecture we’re going to create will have two input embedding layers. The first embedding layer accepts the books, and the second the users. These two embeddings are trained separately and then combined together before being passed to a dense layer.
 ![](images/Architecture.png)
 
 c) Stored the number of unique books and unique users in two seperate variables.
+
 d) Built the embedding layers for both books and users
 
     #Embedding layer for books
