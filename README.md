@@ -29,7 +29,8 @@ This dataset is taken from kaggle. [Click here](https://www.kaggle.com/zygmunt/g
 ## Project overview:
 
 #### Resources:
-  Programming language: Python 3.7
+  Programming language: Python 3.7,
+  
   Packages used: pandas, numpy, matplotlib, seaborn, sklearn, tensorflow.
 
 #### Project goal:
@@ -65,16 +66,20 @@ a) Loading the csv files
 b) Checking the description of the daatsets like the data types, how many rows , columns, etc
 c) Explored the following factors:
   - Top 20 highest rated books
-  [](images/top_rated.png)
+  
+![](images/top_rated.png)
   
   - Top 20 most popular books
-  [](images/most_popular.png)
+  
+![](images/most_popular.png)
   
   - Most popular authors
-  [](images/most_popular_authors.png)
+  
+![](images/most_popular_authors.png)
   
   - Most number of ratings
-  [](images/most_ratings.png)
+  
+![](images/most_ratings.png)
   
 ### 2. Data Preprocessing:
 
@@ -88,7 +93,7 @@ We used the ratings dataset to train our model.
 
 a) Splitting the dataset into train and test set (80-20 split ratio)
 b) The Neural Network architecture we’re going to create will have two input embedding layers. The first embedding layer accepts the books, and the second the users. These two embeddings are trained separately and then combined together before being passed to a dense layer.
-[](images/Architecture.png)
+![](images/Architecture.png)
 c) Stored the number of unique books and unique users in two seperate variables.
 d) Built the embedding layers for both books and users
 
